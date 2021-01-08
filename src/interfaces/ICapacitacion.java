@@ -3,15 +3,19 @@
  */
 package interfaces;
 
+import java.util.List;
+
+import modelo.Capacitacion; // Importacion clase Capacitacion
+
 /**
  * @author silva
  *
  */
 public interface ICapacitacion  {
 	
-	void liscapacitacion();
+	public List<Capacitacion> liscapacitacion(Capacitacion capa);
 	
-	void registrocapacitacion();
+	public void registrocapacitacion();
 
 }
 
