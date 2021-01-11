@@ -13,9 +13,11 @@ import modelo.Capacitacion; // Importacion clase Capacitacion
  */
 public interface ICapacitacion  {
 	
-	public List<Capacitacion> liscapacitacion(Capacitacion capa);
+	public void registrocapacitacion(Capacitacion capa);
 	
-	public void registrocapacitacion();
+	public List<Capacitacion> liscapacitacion();
+	
+
 
 }
 

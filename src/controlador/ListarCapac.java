@@ -1,24 +1,28 @@
 package controlador;
 
 import java.io.IOException;
+import java.util.List;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import implementacion.CapaImplements;
+import modelo.Capacitacion;
 
 /**
  * Servlet implementation class Listar
  */
 @WebServlet("/Listar")
-public class Listar extends HttpServlet {
+public class ListarCapac extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Listar() {
+    public ListarCapac() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -41,7 +45,16 @@ public class Listar extends HttpServlet {
 			  
 			  getServletContext().getRequestDispatcher("/login.jsp").forward(request, response);
 			
-		}else { getServletContext().getRequestDispatcher("/Listarcapacitacion.jsp").forward(request, response);}
+		}else { 
+			
+			CapaImplements cap = new CapaImplements();
+			
+			List<Capacitacion> lis = cap.liscapacitacion();
+			
+			
+			request.setAttribute("listin", lis);
+			
+			getServletContext().getRequestDispatcher("/Listarcapacitacion.jsp").forward(request, response);}
 		  
 		  
 		}

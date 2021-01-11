@@ -7,7 +7,7 @@ package modelo;
  * @author silva
  *
  */
-public class Capacitacion {
+public class Capacitacion extends Usuario {
 	
 	private int identificador;
 	private String dia;
