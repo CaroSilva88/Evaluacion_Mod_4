@@ -31,33 +31,33 @@
 
 
         <div class="formulario">
-			<form method="post" action="#" id="formulario">
+			<form method="post" action="Contacto" id="formulario">
                 <div class="campo">
                     <label for="Nombre">Nombre:</label>
-                    <input type="text" id="Nombre" required/>
+                    <input type="text" id="Nombre" name= "nombre" required/>
                 </div>
 
                 <div class="campo">
                     <div class="en-linea izquierdo">
 						<label for="email">Correo electrónico:</label>
-						<input type="email" id="email" required/>
+						<input type="email" id="email" name= "correo" required/>
 					</div>
 
 					<div class="en linea">
 						<label for="telefono">Telefono:</label>
-						<input type="number" id="telefono" required/>
+						<input type="number" id="telefono" name="telefono" required/>
 					</div>
 				</div>
 
                 <div class="campo">
                     <div class="en-linea izquierdo">
 						<label for="asunto">Asunto:</label>
-						<input type="text" id="asunto" required/>
+						<input type="text" id="asunto" name="asunto"  required/>
                     </div>
                         
                     <div class="en-linea">
 					    <label for="comentario">Comentario:</label>
-					    <input type="text" id="conemtario" required/>
+					    <input type="text" id="conemtario" name="comentario" required/>
                     </div>
                 </div>
 
