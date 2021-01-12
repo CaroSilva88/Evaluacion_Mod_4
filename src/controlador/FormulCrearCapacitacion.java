@@ -79,7 +79,7 @@ public class FormulCrearCapacitacion extends HttpServlet {
 		request.setAttribute("identificador", identificador);
 		request.setAttribute("hora", hora);
 		
-		getServletContext().getRequestDispatcher("/Form.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/FormularioCrearCapa.jsp").forward(request, response);
 			
 	}
 
